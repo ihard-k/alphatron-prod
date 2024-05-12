@@ -18,6 +18,18 @@ dependencies:
   flutter_svg:
   flame_svg: ^1.8.0
   gap: ^3.0.0
+  bloc: "8.1.4"
+  flame_rive: ^1.9.5
+  # flame_bloc: ^1.10.10
+  # flutter_bloc: "8.1.5"
+  equatable: ^2.0.5
+  range_slider_flutter: ^0.0.2
+  # flame_behaviors: "1.0.0"
+  game_framework:
+    path: ../game_framework
+  flutter_dotenv: ^5.1.0
+  device_info_plus: ^9.1.2
+  provider: ^6.1.2
 
 dev_dependencies:
   flutter_test:
@@ -28,12 +40,44 @@ dev_dependencies:
 flutter:
   uses-material-design: true
   assets:
+    - .env
     - assets/images/
     - assets/images/gamescreen/
-    - assets/images/homescreen/
     - assets/fonts/
+    - assets/images/bonusdialog/
+    - assets/images/leaderbordscreen/
+    - assets/images/splashscreen/
+    - assets/images/startscreen/
+    - assets/images/loadingscreen/
+    - assets/images/finedialogsvg/
+    - assets/images/registrationscreen/
+    - assets/images/gameoverscreen/
+    - assets/images/bots/
+    - assets/images/bots/blue/
+    - assets/images/bots/cyan/
+    - assets/images/bots/red/
+    - assets/images/bots/yellow/
+    - assets/images/bots/pink/
+    - assets/images/bots/green/
+    - assets/animation/
 
   fonts:
+    - family: Portico
+      fonts:
+        - asset: assets/fonts/Portico-Regular.otf
+
+    - family: PorticoLight
+      fonts:
+        - asset: assets/fonts/Portico-Light.otf
+
     - family: Perfograma
       fonts:
-      - asset: assets/fonts/perfograma.otf
+        - asset: assets/fonts/Perfograma.otf
+
+    - family: AgencyFB
+      fonts:
+        - asset: assets/fonts/AgencyFB-Bold.ttf
+
+    - family: Agencyr
+      fonts:
+        - asset: assets/fonts/AGENCYR.ttf

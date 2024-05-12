@@ -18,8 +18,11 @@ class SizeConfig {
 
   static void init(BuildContext context) {
     _mediaQueryData = MediaQuery.of(context);
-    screenWidth = _mediaQueryData!.size.width;
-    screenHeight = _mediaQueryData!.size.height;
+    screenWidth =
+        _mediaQueryData!.size.width > 420 ? 420 : _mediaQueryData!.size.width;
+    screenHeight =
+        _mediaQueryData!.size.height > 898 ? 899 : _mediaQueryData!.size.height;
+    print("$screenHeight x $screenWidth");
     blockSizeHorizontal = screenWidth / 100;
     blockSizeVertical = screenHeight / 100;
 
